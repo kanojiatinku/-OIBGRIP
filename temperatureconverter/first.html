@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temperature Converter</title>
+    <title>Temperature Converter</title>
+  <link rel="stylesheet" type="text/css" href="second.css">
+  <script src="third.js"></script>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		.container {
+			max-width: 500px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: white;
+			box-shadow: 0px 0px 10px #ccc;
+			border-radius: 5px;
+			text-align: center;
+		}
+		h1 {
+			margin-top: 0;
+			font-weight: normal;
+		}
+		input[type=number] {
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 100%;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+		select {
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 100%;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-bottom: 20px;
+			box-shadow: 0px 0px 5px #ccc;
+		}
+		button:hover {
+			background-color: #3e8e41;
+		}
+		.result {
+			font-size: 24px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+       
+		<h1>Temperature Converter</h1>
+		<input type="number" id="temp" placeholder="Enter temperature">
+		<select id="unit">
+			<option value="Celsius">Celsius</option>
+			<option value="Fahrenheit">Fahrenheit</option>
+			<option value="Kelvin">Kelvin</option>
+		</select>
+		<button onclick="convertTemperature()">Convert</button>
+		<div class="result" id="result"></div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
